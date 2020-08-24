@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  web:
+    container_name: nginx
+    image: nginx:latest
+    ports:
+      - 8091:80
+    volumes:
+      - ./web:/var/www/html/
+      - ./web/confs/site.conf:/etc/nginx/conf.d/site.conf
+    links:
+      - php
+  php:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: php73-fpm 
+  database:
+    container_name: mysql
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: inethi2018
+      MYSQL_DATABASE: radiusdesk
+      MYSQL_USER: inethi
+      MYSQL_PASS: inethi2018
+    ports:
+      - 6603:3306
+ 

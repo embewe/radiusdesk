@@ -1,0 +1,18 @@
+2020-07-27 09:53:31 Error: [Error] Call to undefined function _()
+Request URL: /cake2/rd_cake/radpostauths/menu_for_grid.json?q=%2Fcake2%2Frd_cake%2Fwebroot%2Fradpostauths%2Fmenu_for_grid.json&_dc=1595843611297&token=b4c6ac81-8c7c-4802-b50a-0a6380555b50&sel_language=4_4
+Stack Trace:
+#0 [internal function]: RadpostauthsController->menu_for_grid()
+#1 /usr/share/nginx/html/cakephp-2.10.22/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(RadpostauthsController), Array)
+#2 /usr/share/nginx/html/cakephp-2.10.22/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/cakephp-2.10.22/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadpostauthsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/cakephp-2.10.22/rd_cake/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2020-08-17 13:20:14 Error: [Error] Call to undefined function _()
+Request URL: /cake2/rd_cake/radpostauths/menu_for_grid.json?q=%2Fcake2%2Frd_cake%2Fwebroot%2Fradpostauths%2Fmenu_for_grid.json&_dc=1597670414893&token=b4c6ac81-8c7c-4802-b50a-0a6380555b50&sel_language=4_4
+Stack Trace:
+#0 [internal function]: RadpostauthsController->menu_for_grid()
+#1 /usr/share/nginx/html/cakephp-2.10.22/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(RadpostauthsController), Array)
+#2 /usr/share/nginx/html/cakephp-2.10.22/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/cakephp-2.10.22/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(RadpostauthsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/cakephp-2.10.22/rd_cake/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
